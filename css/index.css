@@ -50,3 +50,57 @@ p {
     display: flex;
 }
 
+/* Estilos para pantallas de hasta 600px */
+@media screen and (max-width: 600px) {
+    .navbar {
+      text-align: center;
+    }
+    
+    .navbar ul {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .navbar li {
+      margin: 5px 0;
+    }
+    
+    .title-img {
+      text-align: center;
+    }
+    
+    .title-img h1 {
+      font-size: 24px;
+    }
+    
+    .home-img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    footer ul {
+      display: flex;
+      justify-content: center;
+    }
+    
+  }
+  
+  /* Estilos para pantallas de hasta 900px */
+  @media screen and (max-width: 900px) {
+    .title-img {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .title-img h1 {
+      font-size: 36px;
+    }
+  }
+  
+  /* Estilos para pantallas de hasta 1200px */
+  @media screen and (max-width: 1200px) {
+    .title-img h1 {
+      font-size: 48px;
+    }
+  }
+  
