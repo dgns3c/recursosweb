@@ -1,0 +1,52 @@
+@import url(/styles.css);
+
+* {
+    background-color: var(--color-secondary);
+}
+
+section {
+    padding: 2rem;
+    margin: 0;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--h1-text);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+}
+
+p {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-medium);
+}
+
+.red_color {
+    color: var(--special-text-color);
+}
+
+
+.home-img {
+    width: 50%;
+}
+
+.title-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exclamation {
+    width: 15%;
+}
+
+.exclamation-text {
+    display: flex; 
+}
+.arrow {
+    width: 18%;
+}
+.arrow-text {
+    display: flex;
+}
+

@@ -1,0 +1,87 @@
+@import url(/styles.css);  
+  
+  body {
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: var(--color-secondary);
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+  
+  
+  button {
+    padding: 0.5rem;
+    margin: 0.2rem;
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    border-radius: 2rem;
+  }
+  
+  button:hover {
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    border: none;
+  }
+  
+  .filter-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .filter-item {
+    flex: 0 0 calc(33.33% - 20px);
+    padding: 1rem;
+    margin: 10px;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .filter-item.hide {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+    text-align: justify;
+    width: 450px;
+    height: 270px;
+    background-color: var(--color-primary);
+    border-radius: 30px;
+  }
+  
+  p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    display: flex;
+    flex-direction: row-reverse;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .filter-items {
+      justify-content: center;
+    }
+  
+    .filter-item {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .filter-item {
+      flex-basis: 100%;
+    }
+    
+    .card-content {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="../index.html" id="home">Inicio</a></li>
+            <li><a href="html/resources.html" id="resources">Recursos</a></li>
+            <li><a href="html/form.html"><button>Comparte tu recurso!</button></a></li>
+        </ul>
+    </nav>
+    <h1>Conoces algún recurso interesante?</h1>
+    <p>Si conoces alguna herramienta o recurso que sea completamente gratuito con un algún plan gratuito, rellena el siguiente el formulario y si pasa la prueba, se agregará a la página</p>
+    <form action="https://formsubmit.co/036739a74c9d3be9939d9eb195002747" method="POST" class="styled-form">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="ArtboardStudio" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="link">Enlace:</label>
+          <input type="text" id="link" name="link" placeholder="artboard.studio" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="category">Categoría:</label>
+            <select name="category" id="category">
+                <option value="editors">Editores</option>
+                <option value="generators">Generadores</option>
+                <option value="typography">Tipografía</option>
+                <option value="illustrations">Ilustraciones</option>
+                <option value="images">Imagenes</option>
+                <option value="video">Video</option>
+                <option value="color-palette">Paletas de color</option>
+                <option value="mockups">Mockups</option>
+                <option value="miscellany">Miscelaneo</option>
+            </select>
+          </div>
+        
+        <div class="form-group">
+          <label for="textarea">Mensaje:</label>
+          <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Breve descripción sobre la herramienta o recurso"></textarea>
+        </div>
+        
+        <div class="form-group">
+          <button type="submit" class="btn submit-btn">Enviar</button>
+        </div>
+        <input type="hidden" name="_next" value="google.es">
+        <input type="hidden" name="_captcha" value="false">
+      </form>
+      <footer>
+        <ul>
+          <li><a target="_blank" href="https://github.com/dgns3c"><i class="bx bxl-github"></i>Github</a></li>
+          <li><a target="_blank" href="https://es.linkedin.com/in/younes-jarir"><i class="bx bxl-linkedin"></i>Linkedin</a></li>
+        </ul>
+        <p>Esta página ha sido desarrollada por Younes Jarir Ezzahraoui</p>
+    </footer>
+</body>
+</html>

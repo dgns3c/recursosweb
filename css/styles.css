@@ -1,0 +1,90 @@
+* {
+    font-family: 'Fira Code', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+:root{
+    --color-primary: #cecece;
+    --color-secondary: #201a1a;
+    --special-text-color: #ed4842;
+    --h1-text: 5rem;
+    --font-weight-bold: 700;
+    --font-weight-regular: 500;
+    --font-weight-medium: 400;
+}
+
+.navbar {
+    background-color: var(--color-secondary);
+    padding: 10px;
+    margin: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 5rem;
+}
+
+.nav-links a {
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.nav-links button {
+    padding: 1rem;
+    border-radius: 1.5rem;
+    color: var(--color-primary);
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    cursor: pointer;
+}
+
+.nav-links button:hover {
+    background: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+footer {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+  
+footer p {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    font-weight: var(--font-weight-medium);
+}
+  
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+  
+footer li {
+    padding: 0.5rem;
+    list-style: none;
+}
+  
+footer a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+  
+footer a i {
+    color: var(--color-primary);
+    margin-left: 1rem;
+}
+  
